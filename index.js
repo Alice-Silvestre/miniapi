@@ -24,6 +24,16 @@ app.get("/professores", (req, res )=> {
     res.send(professores);
 }) ;
 
+app.get("/materias", (req, res )=> {
+    let materias  = [ {
+                    disciplina : "Topicos Especiais",
+                    curso : "ADS",
+                    professor: "Craudio"
+        
+    }]
+    res.send(materias);
+}) ;
+
 
 app.listen(3000, () => {
     console.log("funfando...");
